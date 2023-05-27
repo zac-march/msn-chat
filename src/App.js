@@ -6,9 +6,11 @@ import Input from "./components/Input/Input";
 function App() {
   return (
     <div className={style.App}>
-      <Header />
-      <Feed />
-      <Input />
+      <div className={style.container}>
+        <Header />
+        <Feed />
+        <Input />
+      </div>
     </div>
   );
 }

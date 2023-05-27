@@ -4,6 +4,8 @@
   display: flex;
   padding: 1rem;
   justify-content: space-between;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .container > h1 {
