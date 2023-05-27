@@ -1,0 +1,11 @@
+.container {
+  background-color: rgb(33, 33, 33);
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.container > h1 {
+  margin: 0;
+}
