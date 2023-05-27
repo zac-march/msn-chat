@@ -1,0 +1,23 @@
+.container {
+  height: 10vh;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.container > form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > form > input {
+  width: 100%;
+  font-size: 1.8rem;
+  border: none;
+}
+
+.container > form > button {
+  aspect-ratio: 1/1;
+  font-size: 1.5rem;
+}
