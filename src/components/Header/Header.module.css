@@ -1,12 +1,57 @@
 .container {
-  background-color: rgb(33, 33, 33);
   display: flex;
-  padding: 1rem;
   justify-content: space-between;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  flex-direction: column;
 }
 
-.container > h1 {
-  margin: 0;
+.windowBtns {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.windowBtns > button {
+  font-weight: bold;
+  background-color: #d4d0c8;
+  font-size: 0.7rem;
+}
+
+.headerTop {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: linear-gradient(0.25turn, #0c276c, #a5c9f1);
+}
+
+.headerTop > .title {
+  display: flex;
+  padding: 2px;
+  gap: 0.25rem;
+}
+
+.titleIcon {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBottom {
+  background-color: #d4d0c8;
+  display: flex;
+  padding: 3px;
+  gap: 0.5rem;
+}
+
+.headerBottom > button {
+  font-size: 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.headerBottom > button:hover {
+  text-decoration: underline;
 }
