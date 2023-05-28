@@ -11,7 +11,7 @@ function Header({ auth }) {
       <div className={style.headerTop}>
         <div className={style.title}>
           <div className={style.titleIcon}>
-            <img src={msnLogo} />
+            <img alt="MSN logo" src={msnLogo} />
           </div>
           <h4>MSN Chat</h4>
         </div>

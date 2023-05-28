@@ -1,15 +1,13 @@
 import style from "./App.module.css";
 import Header from "./components/Header/Header";
 import Feed from "./components/Feed/Feed";
-import Input from "./components/Input/Input";
 import winXPBackground from "./resources/windows-xp-bg.webp";
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-import { useAuthState, userAuthState } from "react-firebase-hooks/auth";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { useAuthState } from "react-firebase-hooks/auth";
 import SignIn from "./components/SignIn/SignIn";
 import getFirebaseApp from "./utils/getFirebaseApp";
 
