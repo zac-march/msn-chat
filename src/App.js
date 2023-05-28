@@ -9,9 +9,9 @@ import { getFirestore } from "firebase/firestore";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 import SignIn from "./components/SignIn/SignIn";
-import getFirebaseApp from "./utils/getFirebaseApp";
+import getFirebaseConfig from "./utils/getFirebaseConfig";
 
-const app = initializeApp(getFirebaseApp());
+const app = initializeApp(getFirebaseConfig());
 
 const auth = getAuth(app);
 const db = getFirestore(app);
