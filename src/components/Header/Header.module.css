@@ -1,6 +1,5 @@
 .container {
   background-color: rgb(33, 33, 33);
-  height: max-content;
   display: flex;
   padding: 1rem;
   justify-content: space-between;

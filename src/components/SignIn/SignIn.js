@@ -1,14 +1,15 @@
 import style from "./SignIn.module.css";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
-function SignIn({ firebase, auth }) {
-  const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
+function SignIn({ auth }) {
+  const signIn = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider);
   };
 
   return (
     <div className={style.container}>
-      <button onClick={signInWithGoogle}>Sign In with Google</button>
+      <button onClick={signIn}>Sign In with Google</button>
     </div>
   );
 }

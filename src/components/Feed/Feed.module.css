@@ -1,4 +1,28 @@
 .container {
-  flex: 1;
   background-color: black;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  flex: 1;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+  overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #ffffff4c;
+  border-radius: 10px;
 }
