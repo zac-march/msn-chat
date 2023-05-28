@@ -1,10 +1,31 @@
 .container {
   display: flex;
+  gap: 1rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: aqua;
+  background: linear-gradient(#f6f6fa, #cbdaee, #f6f6fa);
+}
+
+.logo {
+  max-width: 40%;
+  padding: 0.3rem;
+  border: #788eb9 solid 1px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.logo > img {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  image-rendering: pixelated;
 }
 
 .container > button {
   height: max-content;
+  color: #304b8c;
+  font-weight: bold;
 }

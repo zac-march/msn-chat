@@ -1,4 +1,5 @@
 import style from "./Header.module.css";
+import msnLogo from "../../resources/msnLogo.png";
 
 function Header({ auth }) {
   return (
@@ -6,7 +7,7 @@ function Header({ auth }) {
       <div className={style.headerTop}>
         <div className={style.title}>
           <div className={style.titleIcon}>
-            <img src="https://picsum.photos/15/15" />
+            <img src={msnLogo} />
           </div>
           <h4>MSN Chat</h4>
         </div>
