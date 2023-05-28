@@ -2,6 +2,10 @@ import style from "./Header.module.css";
 import msnLogo from "../../resources/msnLogo.png";
 
 function Header({ auth }) {
+  function handleSignOut() {
+    if (auth.currentUser) auth.signOut();
+  }
+
   return (
     <div className={style.container}>
       <div className={style.headerTop}>
@@ -14,7 +18,7 @@ function Header({ auth }) {
         <div className={style.windowBtns}>
           <button>_</button>
           <button>□</button>
-          <button>x</button>
+          <button onClick={handleSignOut}>x</button>
         </div>
       </div>
       <div className={style.headerBottom}>
@@ -24,9 +28,6 @@ function Header({ auth }) {
         <button>Tools</button>
         <button>Help</button>
       </div>
-      {auth.currentUser && (
-        <button onClick={() => auth.signOut()}>Sign out</button>
-      )}
     </div>
   );
 }
