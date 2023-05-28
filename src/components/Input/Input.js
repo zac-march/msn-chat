@@ -4,7 +4,7 @@ function Input({ formValue, sendMessage, handleChange }) {
   return (
     <div className={style.container}>
       <form onSubmit={sendMessage}>
-        <input value={formValue} onChange={handleChange}></input>
+        <textarea value={formValue} onChange={handleChange}></textarea>
         <button type="submit">Send</button>
       </form>
     </div>

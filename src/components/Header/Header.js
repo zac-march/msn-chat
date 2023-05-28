@@ -18,7 +18,9 @@ function Header({ auth }) {
         <div className={style.windowBtns}>
           <button>_</button>
           <button>□</button>
-          <button onClick={handleSignOut}>x</button>
+          <button className={style.signOutBtn} onClick={handleSignOut}>
+            x
+          </button>
         </div>
       </div>
       <div className={style.headerBottom}>

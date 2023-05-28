@@ -1,9 +1,20 @@
+@import "../../index.css";
+
 .container {
   background-color: black;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 1fr max-content;
+  grid-template-rows: min-content 1fr max-content;
   flex: 1;
+  background: #0148b6;
+  gap: 0.2rem;
+  padding: 0.2rem;
+}
+
+.container > p {
+  font-size: var(--text-regular);
+  margin: 0;
+  padding: 3px;
 }
 
 .messages {
@@ -12,17 +23,19 @@
   padding: 1rem;
   gap: 0.5rem;
   overflow-y: scroll;
+  background-color: white;
 }
 
 .messages::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 1rem;
 }
 
 .messages::-webkit-scrollbar-track {
-  background: #000000;
+  background: linear-gradient(0.25turn, #dddfeb, #edf2ff);
 }
 
 .messages::-webkit-scrollbar-thumb {
-  background: #ffffff4c;
-  border-radius: 10px;
+  background: #c3d6fe;
+  border: #9ea9c0 solid 1px;
+  border-radius: 2px;
 }

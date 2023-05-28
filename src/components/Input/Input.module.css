@@ -1,7 +1,9 @@
+@import "../../index.css";
+
 .container {
-  height: 10vh;
   display: flex;
   padding: 0.5rem;
+  background-color: white;
 }
 
 .container > form {
@@ -12,12 +14,19 @@
   gap: 0.3rem;
 }
 
-.container > form > input {
+.container textarea {
   width: 100%;
-  font-size: 1.8rem;
+  height: 100%;
+  font-size: var(--text-regular);
   border: none;
+  resize: none;
+}
+
+.container textarea:focus-visible {
+  outline: none;
 }
 
 .container > form > button {
-  font-size: 1.5rem;
+  font-size: var(--text-regular);
+  height: 100%;
 }

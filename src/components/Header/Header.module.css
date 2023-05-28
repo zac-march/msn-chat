@@ -1,3 +1,5 @@
+@import "../../index.css";
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -10,19 +12,46 @@
   display: flex;
   align-items: center;
   padding: 3px;
+  gap: 1px;
 }
 
 .windowBtns > button {
   font-weight: bold;
-  background-color: #d4d0c8;
-  font-size: 0.7rem;
+  box-shadow: rgb(70, 70, 255) 0px -1px 2px 1px inset;
+  background-image: radial-gradient(
+    circle at 90% 90%,
+    rgb(0, 84, 233) 0%,
+    rgb(34, 99, 213) 55%,
+    rgb(68, 121, 228) 70%,
+    rgb(163, 187, 236) 90%,
+    white 100%
+  );
+  border: white solid 1px;
+  font-size: var(--text-regular);
+  border-radius: 3px;
+  color: white;
 }
-
 .headerTop {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background: linear-gradient(0.25turn, #0c276c, #a5c9f1);
+  background: linear-gradient(
+    rgb(0, 88, 238) 0%,
+    rgb(53, 147, 255) 4%,
+    rgb(40, 142, 255) 6%,
+    rgb(18, 125, 255) 8%,
+    rgb(3, 111, 252) 10%,
+    rgb(2, 98, 238) 14%,
+    rgb(0, 87, 229) 20%,
+    rgb(0, 84, 227) 24%,
+    rgb(0, 85, 235) 56%,
+    rgb(0, 91, 245) 66%,
+    rgb(2, 106, 254) 76%,
+    rgb(0, 98, 239) 86%,
+    rgb(0, 82, 214) 92%,
+    rgb(0, 64, 171) 94%,
+    rgb(0, 48, 146) 100%
+  );
 }
 
 .headerTop > .title {
@@ -58,4 +87,16 @@
 
 .headerBottom > button:hover {
   text-decoration: underline;
+}
+
+.windowBtns > .signOutBtn {
+  box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
+  background-image: radial-gradient(
+    circle at 90% 90%,
+    rgb(204, 70, 0) 0%,
+    rgb(220, 101, 39) 55%,
+    rgb(205, 117, 70) 70%,
+    rgb(255, 204, 178) 90%,
+    white 100%
+  );
 }

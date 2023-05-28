@@ -1,37 +1,24 @@
+@import "../../index.css";
+
 .message {
-  display: flex;
   border-radius: 15px;
   gap: 0.5rem;
   max-width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: var(--text-regular);
 }
 
 .message * {
   margin: 0;
 }
 
-.message > img {
-  align-self: end;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.message > p {
-  padding: 0.75rem 1rem;
-  border-radius: 20px;
+.text {
+  color: black;
   overflow: hidden;
   overflow-wrap: break-word;
+  padding-left: 1rem;
 }
 
-.sent > p {
-  background-color: blue;
-}
-
-.sent {
-  justify-content: end;
-}
-
-.recieved > p {
-  order: 2;
-  color: black;
-  background-color: rgb(255, 255, 255);
+.sender {
+  color: rgb(103, 103, 103);
 }

@@ -2,6 +2,7 @@ import style from "./App.module.css";
 import Header from "./components/Header/Header";
 import Feed from "./components/Feed/Feed";
 import Input from "./components/Input/Input";
+import winXPBackground from "./resources/windows-xp-bg.webp";
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -21,7 +22,10 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className={style.App}>
+    <div
+      style={{ backgroundImage: `url(${winXPBackground})` }}
+      className={style.App}
+    >
       <div className={style.container}>
         <Header auth={auth} />
         {user ? (

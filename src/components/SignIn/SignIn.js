@@ -11,7 +11,7 @@ function SignIn({ auth }) {
   return (
     <div className={style.container}>
       <div className={style.logo}>
-        <img src={msnLogo} />
+        <img alt="MSN Logo" src={msnLogo} />
       </div>
       <button onClick={signIn}>Sign In with Google</button>
     </div>
